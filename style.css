@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  padding: 43.444vh 0;
+  background: #000;
+  color: hsl(0, 0%, 100%);
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: center;
+  width: 383px;
+  margin: auto;
+  gap: 24px;
+  font-size: 16px;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  color: #000;
+  text-decoration: none;
+  padding: 16px 32px;
+  font-weight: 500;
+  border-radius: 8px;
+  background: #fff;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 16px 8px rgba(255, 255, 255, 0.15);
+}
+
+.header {
+  font-size: 74px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: -0.04em;
+  text-align: center;
+}
+
+.subheader {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  letter-spacing: -0.04em;
+  text-align: center;
+  color: hsl(0, 0%, 80%);
+}
+
+.social-btn-container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.social-btn {
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s;
+}
+
+.social-btn:hover {
+  transform: scale(1.1);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: justify;
+/*   gap: 4px; */
+}
+
+@media (min-width: 320px) and (max-width: 809px) {
+  .header {
+    font-size: 56px;
+  }
+  
+  .subheader {
+    font-size: 18px;
+  }
+  
+  .btn-container {
+    padding: 0px 40px;
+  }
+  
+  .btn {
+    padding: 13px 29px;
+    font-size: 12px;
+  }
+  
+  .container {
+    margin: auto;
+    width: 370px;
+  }
+  
+  .social-btn-container {
+    gap: 8px;
+  }
+}
